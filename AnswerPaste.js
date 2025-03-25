@@ -47,9 +47,9 @@
 
             // Loop through each found element and set a value
             for (let i = 0; i < ids.length; i++) {
-                const inputElement = iframeDoc.getElementById(ids[i]);
+                const inputElement = document.getElementById(ids[i]);
                 if (inputElement) {
-                    inputElement.value = `Value ${i}`;
+                    inputElement.value = answers[i];
                 }
             }
         } else {
